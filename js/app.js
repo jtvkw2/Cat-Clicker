@@ -22,20 +22,20 @@ $('.catImg').click(function(e) {
 $('.nextImg').click(function(e) {
   i++;
   if(i >= 45){i = 1}
-  $('.catImg').attr("src", "/Users/Jtvkw2/Desktop/Udacity/Cat Clicker/img/"+ i + ".jpg");
+  $('.catImg').attr("src", "img/"+ i + ".jpg");
   $('.catName').text(names[i]);
 });
 
 $('.prevImg').click(function(e) {
   i--;
   if(i <= 1){i = 45}
-  $('.catImg').attr("src", "/Users/Jtvkw2/Desktop/Udacity/Cat Clicker/img/"+ i + ".jpg");
+  $('.catImg').attr("src", "img/"+ i + ".jpg");
   $('.catName').text(names[i]);
 });
 
 function changeCat(index){
   i = index - 1 ;
-  $('.catImg').attr("src", "/Users/Jtvkw2/Desktop/Udacity/Cat Clicker/img/"+ i + ".jpg");
+  $('.catImg').attr("src", "img/"+ i + ".jpg");
   $('.catName').text(names[i]);
 }
 
